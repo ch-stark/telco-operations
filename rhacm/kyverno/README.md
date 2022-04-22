@@ -85,8 +85,8 @@ The Kyverno community has some pre-defined policies on the project site that can
 
 ## Current gaps in ACM vs Kyverno
 
-* Deleting the policy doesn't delete the content.
-* No way to have policies that rely on webhooks (validate, mutate).
+* Deleting the policy doesn't delete the content (RHACM team is working on a solution).
+* No way to have policies that rely on webhooks (validate, mutate) (RHACM integrates with Gatekeeper and Kyverno and officially supports Gatekeeper to achieve that).
 * No way to have policies that create resources out of an event (like a namespace creation).
 * We could templatize kyverno policies using the [policy-generator-plugin](https://github.com/stolostron/policy-generator-plugin)
 
